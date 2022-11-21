@@ -29,16 +29,20 @@ main {
   section#cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
+
+    &.hide {
+      display: none;
+    }
 
     a.card {
       @include card-color(#e67e22, #d35400);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50px;
-      width: 50px;
+      height: 450px;
+      width: 300px;
       border-radius: 10px;
 
       &:nth-of-type(2) {
@@ -52,8 +56,21 @@ main {
       h2 {
         color: white;
         font-size: 30px;
-        display: none;
       }
+    }
+  }
+
+  section#blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    div.block {
+      height: 50px;
+      width: 50px;
+      background: #e67e22;
+      border-radius: 8px;
     }
   }
 

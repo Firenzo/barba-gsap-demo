@@ -61,10 +61,6 @@ p {
   text-align: center;
   height: 100%;
   background: #232a31;
-
-  &.page-2 {
-    background: #e67e22;
-  }
 }
 
 div.wrapper {
@@ -79,13 +75,13 @@ a.button {
   font-weight: 500;
   color: white;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #9b59b6;
   transition: background-color 0.25s;
 }
 
 button:hover,
 a.button:hover {
-  background-color: #232a31;
+  background-color: #8e44ad;
 }
 
 button:focus,

@@ -1,42 +1,69 @@
-// import './styles/app.scss'
-import barba from '@barba/core'
-import gsap from 'gsap'
+// --------------------------------------------//
+//                                             //
+//                 DEMO SETUP                  //
+//                                             //
+// --------------------------------------------//
 
-const amountOfCards = 0
+import gsap from 'gsap'
+import barba from '@barba/core'
+
 const header = document.querySelector('header')
 const cardSection = document.querySelector('section#cards')
+const blockSection = document.querySelector('section#blocks')
+const amountOfBlocks = 0
 const animationThing = document.querySelector('div.animation-thing')
 
-if (cardSection && !!amountOfCards) {
-  for (let i = 0; i < amountOfCards; i++) {
-    cardSection.innerHTML += `
-    <a href="otherPage.html" class="card">
-      <div class="content">
-        <h2>Card 1</h2>
-      </div>
-    </a>
-    `
-  }
+// if (blockSection && !!amountOfBlocks) {
+//   for (let i = 0; i < amountOfBlocks; i++) {
+//     blockSection.innerHTML += `
+//       <div class="block"></div>
+//     `
+//   }
+// }
+
+// --------------------------------------------//
+//                                             //
+//                    DEMO                     //
+//                                             //
+// --------------------------------------------//
+
+// 1. Basic intro animations
+
+// gsap.from(header, {
+//   opacity: 0,
+//   y: -header.offsetHeight,
+//   duration: 1,
+//   delay: 0.5,
+// })
+
+// if (cardSection) {
+//   gsap.from('.card', {
+//     y: 200,
+//     opacity: 0,
+//     duration: 1,
+//     delay: 1,
+//     stagger: {
+//       each: 0.3,
+//     },
+//   })
+// }
+
+// 2. Row and Grid animations
+const showBlockAnimation = 0
+if (blockSection && amountOfBlocks && showBlockAnimation) {
+  gsap.to('.block', {
+    y: 100,
+    opacity: 0,
+    ease: 'power2.inOut',
+    duration: 7,
+    stagger: {
+      each: 0.1,
+      from: 'center',
+      grid: 'auto',
+      duration: 0.5,
+    },
+  })
 }
-
-gsap.from(header, {
-  opacity: 0,
-  y: -header.offsetHeight,
-  duration: 0.5,
-  delay: 0.5,
-})
-
-gsap.from('.card', {
-  // y: 200,
-  opacity: 0,
-  stagger: {
-    each: 0.1,
-    from: 'center',
-    grid: 'auto',
-    // ease: 'power2.inOut',
-  },
-  duration: 1,
-})
 
 // barba.init({
 //   transitions: [
