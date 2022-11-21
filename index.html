@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./styles/app.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" data-barba="wrapper">
+      <header data-barba="header">
+        <div class="wrapper">
+          <h1>Some title</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sed a dolor quasi nostrum obcaecati provident modi minus blanditiis, nemo
+            cumque perferendis voluptatibus ducimus rerum eos omnis molestias, enim laboriosam laborum iste?
+          </p>
+        </div>
+      </header>
+      <main data-barba="container" data-barba-namespace="home">
+        <section id="cards">
+          <a href="otherPage.html" class="card">
+            <div class="content">
+              <h2>Card 1</h2>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="content">
+              <h2>Card 1</h2>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="content">
+              <h2>Card 1</h2>
+            </div>
+          </a>
+        </section>
+      </main>
+      <div id="animation-things">
+        <div class="animation-thing"></div>
+        <div class="animation-thing"></div>
+        <div class="animation-thing"></div>
+        <div class="animation-thing"></div>
+        <div class="animation-thing"></div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

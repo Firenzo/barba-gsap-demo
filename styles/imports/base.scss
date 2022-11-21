@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  color: white;
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+
+  &:after {
+    content: '.';
+    color: #e74c3c;
+  }
+}
+
+p {
+  color: white;
+  max-width: 750px;
+  font-size: 18px;
+  line-height: 1.7;
+
+  + h1 {
+    margin-top: 50px;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  + a.button {
+    margin-top: 2rem;
+  }
+}
+
+#app {
+  text-align: center;
+  height: 100%;
+  background: #232a31;
+
+  &.page-2 {
+    background: #e67e22;
+  }
+}
+
+div.wrapper {
+  max-width: 1280px;
+}
+
+button,
+a.button {
+  border-radius: 8px;
+  padding: 20px 100px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  transition: background-color 0.25s;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #232a31;
+}
+
+button:focus,
+button:focus-visible,
+a.button:focus,
+a.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: #213547;
+//     background-color: #ffffff;
+//   }
+//   a:hover {
+//     color: #747bff;
+//   }
+//   button {
+//     background-color: #f9f9f9;
+//   }
+// }

@@ -1,0 +1,22 @@
+{
+  "name": "barba-gsap-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1",
+    "sass": "^1.55.0",
+    "vite": "^3.1.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.11.1"
+  }
+}
